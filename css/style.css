@@ -11,11 +11,14 @@ body{
 }
 .logo{
     height: 45px;
+    padding-left: 25px;
+    margin: 25px 0;
 }
 .logo .first-text, .logo .second-text{
     font-size: 20px;
     font-weight: 700;
     vertical-align: 15px;
+    
 }
 .logo img{
     height: 40px;
@@ -37,12 +40,31 @@ body{
     background-color: #222222;
     color: #F3F3F3;
     font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.top span{
+    margin: 10px 0;
+    padding-left: 50px;
+}
+.top .dropdown{
+    display: flex;
+    padding-right: 20px;
 }
 .navbar{
     background-color: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.nav-item{
+.nav-list{
     color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 25px;;
+}
+.nav-list li{
+    margin: 0 20px;
 }
 .slide{
     background-color: #cccccc;
@@ -51,9 +73,13 @@ body{
     background-repeat: no-repeat;
     height: 600px;
     background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 .slide-text{
     text-align: center;
+    padding-right: 250px;
 }
 .slide-text h2{
     background-color: white;
@@ -76,7 +102,7 @@ body{
     color: white;
 }
 .destacados{
-    padding-top: 40px;
+    padding-top: 60px;
     text-align: center;
 }
 .destacados h2{
@@ -88,39 +114,67 @@ body{
     font-size: 15px;
     color: #666666;
 }
-.destacados article{
-    background-color: #FBFAF6;
+.destacados .cardContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5px 15vw 100px 15vw;
 }
-.destacados article h3{
+.cardContainer article{
+    background-color: #FBFAF6;
+    width: 265px;
+}
+.cardContainer article img{
+    width: 100%;
+}
+.cardContainer article h3{
     color: #3C2313;
     font-size: 15;
     font-weight: 500;
 }
-.destacados article p{
+.cardContainer article p{
     color: #F0A83E;
     font-size: 15;
     font-weight: 500;
 }
-.info{
+.footernav{
+    display: flex;
     background-color: #3C2313;
     color: white;
+    justify-content: space-between;
+    align-items: center;
 }
-.info article i{
+.footernav .logo{
+    padding-right: 25px;
+}
+.footernav .info{
+    padding: 50px 0 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.footernav .info article{
+    margin: 20px 0;
+}
+.footernav .info article i{
     font-size: 66px;
 }
-.info article h2{
+.footernav .info article h2{
     font-size: 20px;
     font-weight: 700;
 }
-.info article p{
+.footernav .info article p{
     font-size: 10px;
     font-weight: 700;
     color: #8A8787;
 }
-.rights{
+footer .rights{
     text-align: center;
-    background-color: #F0A83E;
+    background-color: #222222;
     color: white;
     font-size: 10px;
     font-weight: 700;
+}
+footer .rights p{
+    margin: 0;
 }
