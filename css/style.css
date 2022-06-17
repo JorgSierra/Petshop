@@ -261,6 +261,7 @@ footer .rights a img{
         align-items: center;
     }
     .footernav .logo{
+        order: -1;
         padding-right: 0;
         padding-bottom: 1rem;
     }
