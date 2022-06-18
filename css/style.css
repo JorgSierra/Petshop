@@ -74,8 +74,8 @@ body{
     height: 600px;
     background-position: center;
     display: flex;
-    align-items: center;
     flex-direction: row-reverse;
+    align-items: center;
 }
 .slide-text{
     text-align: center;
